@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "pylorawan"
+version = "1.0.0"
+description = "LoRaWAN Library"
+authors = ["Everynet <vk@everynet.com>"]
+
+packages = [
+    { include="pylorawan" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pycryptodomex = "^3.10.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+black = "^21.12b0"
+isort = "^5.10.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
